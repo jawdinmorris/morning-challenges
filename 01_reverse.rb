@@ -15,7 +15,5 @@
 #
 
 def reverse(string)
-string.reverse!
+string.reverse
 end
-
-reverse("Hello")
