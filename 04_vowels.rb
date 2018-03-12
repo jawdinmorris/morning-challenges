@@ -14,6 +14,13 @@
 # ruby tests/04_vowels_test.rb
 #
 
+
 def vowels (string)
-  # Your code here
+  x=[]
+  string.chars.to_a.each do |i|
+    if i =~ /[aeiouAEIOU]/
+      x.push(i)
+    end
+  end
+  return x
 end
