@@ -19,5 +19,16 @@
 #
 
 def includedOnce (haystack, needle)
+  b = Hash.new(0)
+
+  # iterate over the array, counting duplicate entries
+  haystack.each do |v|
+    b[v] += 1
+  end
+  if b[needle] == 1
+    return true
+  else
+    return false
+  end
   # Your code here
 end
